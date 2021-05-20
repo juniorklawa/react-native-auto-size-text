@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import {ScrollView, StyleSheet, Text, TextInput, View} from 'react-native';
-import AutoSizeText from 'react-native-auto-size-text';
-import {TEXT_MODE} from 'react-native-auto-size-text/lib/types';
+import {AutoSizeText, TEXT_MODE} from 'react-native-auto-size-text';
 
 const App = () => {
   const [text, setText] = useState<string>('');

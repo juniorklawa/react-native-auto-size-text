@@ -8,7 +8,15 @@ import OverflowReplacement from './components/OverflowReplacement'
 import PresetFontSize from './components/PresetFontSize'
 import StepGranularity from './components/StepGranularity'
 
-export const TEXT_MODE = {
+type ResizeTextModeTypes =
+  | 'max_lines'
+  | 'min_font_size'
+  | 'preset_font_sizes'
+  | 'overflow_replacement'
+  | 'step_granularity'
+  | 'group'
+
+export const ResizeTextMode = {
   MaxLines: 'max_lines',
   MinFontSize: 'min_font_size',
   PresetFontSizes: 'preset_font_sizes',
@@ -20,7 +28,7 @@ export const TEXT_MODE = {
 export interface AutoSizeTextProps extends TextProps {
   children?: React.ReactNode
   fontSize?: number
-  mode?: string
+  mode?: ResizeTextModeTypes
   numberOfLines?: number
   minFontSize?: number
   fontSizePresets?: number[]
