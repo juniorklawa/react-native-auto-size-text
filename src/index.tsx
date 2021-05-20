@@ -28,7 +28,7 @@ export const ResizeTextMode = {
 export interface AutoSizeTextProps extends TextProps {
   children?: React.ReactNode
   fontSize?: number
-  mode?: ResizeTextModeTypes
+  mode: ResizeTextModeTypes
   numberOfLines?: number
   minFontSize?: number
   fontSizePresets?: number[]
