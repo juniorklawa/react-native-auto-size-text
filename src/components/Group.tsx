@@ -14,7 +14,7 @@ const Group = (props: AutoSizeTextProps) => {
       style={[
         style,
         {
-          fontSize: 16,
+          fontSize: currentFont,
         },
       ]}
     >
