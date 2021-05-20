@@ -1,6 +1,6 @@
 {
   "name": "react-native-auto-size-text",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "homepage": "https://github.com/juniorklawa/react-native-auto-size-text",
   "main": "lib/index.js",
