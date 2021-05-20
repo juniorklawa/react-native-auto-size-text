@@ -1,24 +1,27 @@
-import * as React from 'react'
-import { Button, StyleSheet, Text, View } from 'react-native'
+import React from 'react'
 
-export const addOne = (input: number) => input + 1
+import Group from './components/Group'
+import MaxLines from './components/MaxLines'
+import MinFontSize from './components/MinFontSize'
+import OverflowReplacement from './components/OverflowReplacement'
+import PresetFontSize from './components/PresetFontSize'
+import StepGranularity from './components/StepGranularity'
+import { AutoSizeTextProps } from './types'
 
-export const Counter = () => {
-  const [count, setCount] = React.useState(0)
+const AutoSizeText = ({ ...props }: AutoSizeTextProps) => {
+  const selectedMode = props.mode as string
 
-  return (
-    <View style={styles.container}>
-      <Text>You pressed {count} times</Text>
-      <Button onPress={() => setCount(addOne(count))} title='Press Me' />
-    </View>
-  )
+  const Modes: any = {
+    max_lines: <MaxLines {...props} />,
+    min_font_size: <MinFontSize {...props} />,
+    preset_font_sizes: <PresetFontSize {...props} />,
+    overflow_replacement: <OverflowReplacement {...props} />,
+    step_granularity: <StepGranularity {...props} />,
+    group: <Group {...props} />,
+    default: <MaxLines {...props} />,
+  }
+
+  return Modes[selectedMode] || Modes.default
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    height: 200,
-  },
-})
+export default AutoSizeText
