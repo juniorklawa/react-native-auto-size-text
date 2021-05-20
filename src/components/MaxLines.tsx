@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { NativeSyntheticEvent, Text, TextLayoutEventData } from 'react-native'
 
-import { AutoSizeTextProps } from '../types'
+import { AutoSizeTextProps } from '../index'
 
 const MaxLines = (props: AutoSizeTextProps) => {
   const { fontSize, children, style, numberOfLines } = props

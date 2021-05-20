@@ -5275,7 +5275,7 @@ react-is@^16.8.1:
 
 "react-native-auto-size-text@https://github.com/juniorklawa/react-native-auto-size-text":
   version "1.0.0"
-  resolved "https://github.com/juniorklawa/react-native-auto-size-text#b2c8fe5cba96712ac3d899ad77b44b24c9139764"
+  resolved "https://github.com/juniorklawa/react-native-auto-size-text#06b4ec3e155683c54440c56530681ca009958d92"
 
 react-native-codegen@^0.0.6:
   version "0.0.6"
