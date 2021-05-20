@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {ScrollView, StyleSheet, Text, TextInput, View} from 'react-native';
-import {AutoSizeText, TEXT_MODE} from 'react-native-auto-size-text';
+import {AutoSizeText, ResizeTextMode} from 'react-native-auto-size-text';
 
 const App = () => {
   const [text, setText] = useState<string>('');
@@ -18,7 +18,10 @@ const App = () => {
       <Text>MaxLines</Text>
 
       <View style={styles.textWrapper}>
-        <AutoSizeText fontSize={64} numberOfLines={2} mode={TEXT_MODE.MaxLines}>
+        <AutoSizeText
+          fontSize={64}
+          numberOfLines={2}
+          mode={ResizeTextMode.MaxLines}>
           {text}
         </AutoSizeText>
       </View>
