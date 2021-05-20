@@ -9,12 +9,12 @@ import PresetFontSize from './components/PresetFontSize'
 import StepGranularity from './components/StepGranularity'
 
 export enum ResizeTextMode {
-  MaxLines = 'max_lines',
-  MinFontSize = 'min_font_size',
-  PresetFontSizes = 'preset_font_sizes',
-  OverflowReplacement = 'overflow_replacement',
-  StepGranularity = 'step_granularity',
-  Group = 'group',
+  max_lines = 'max_lines',
+  min_font_size = 'min_font_size',
+  preset_font_sizes = 'preset_font_sizes',
+  overflow_replacement = 'overflow_replacement',
+  step_granularity = 'step_granularity',
+  group = 'group',
 }
 
 export interface AutoSizeTextProps extends TextProps {
