@@ -55,13 +55,13 @@ const App = () => {
         </AutoSizeText>
       </View>
 
-      {/* <Text>Group</Text>
+      <Text>Group</Text>
 
       <View style={styles.textWrapper}>
         <AutoSizeText mode={TEXT_MODE.Group} fontSize={2048}>
           {text}
         </AutoSizeText>
-      </View> */}
+      </View>
 
       <Text>Granularity</Text>
       <View style={styles.textWrapper}>
