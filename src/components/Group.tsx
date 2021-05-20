@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
+import * as React from 'react'
 import { Text } from 'react-native'
 
 import { AutoSizeTextProps } from '../types'
 
 const Group = (props: AutoSizeTextProps) => {
-  const [currentFont] = useState(2048)
+  // const [currentFont] = React.useState(2048)
 
   const { children, style } = props
 
@@ -14,7 +14,7 @@ const Group = (props: AutoSizeTextProps) => {
       style={[
         style,
         {
-          fontSize: currentFont,
+          fontSize: 16,
         },
       ]}
     >
