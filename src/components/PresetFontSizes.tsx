@@ -3,7 +3,7 @@ import { NativeSyntheticEvent, Text, TextLayoutEventData } from 'react-native'
 
 import { AutoSizeTextProps } from '../index'
 
-const PresetFontSize = (props: AutoSizeTextProps) => {
+const PresetFontSizes = (props: AutoSizeTextProps) => {
   const { fontSizePresets, children, style, numberOfLines } = props
   const [currentFont, setCurrentFont] = React.useState<number>(
     fontSizePresets![0] as number
@@ -39,4 +39,4 @@ const PresetFontSize = (props: AutoSizeTextProps) => {
   )
 }
 
-export default PresetFontSize
+export default PresetFontSizes

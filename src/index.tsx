@@ -5,7 +5,7 @@ import Group from './components/Group'
 import MaxLines from './components/MaxLines'
 import MinFontSize from './components/MinFontSize'
 import OverflowReplacement from './components/OverflowReplacement'
-import PresetFontSize from './components/PresetFontSize'
+import PresetFontSizes from './components/PresetFontSizes'
 import StepGranularity from './components/StepGranularity'
 
 export enum ResizeTextMode {
@@ -34,7 +34,7 @@ export const AutoSizeText = ({ ...props }: AutoSizeTextProps) => {
   const Modes: any = {
     max_lines: <MaxLines {...props} />,
     min_font_size: <MinFontSize {...props} />,
-    preset_font_sizes: <PresetFontSize {...props} />,
+    preset_font_sizes: <PresetFontSizes {...props} />,
     overflow_replacement: <OverflowReplacement {...props} />,
     step_granularity: <StepGranularity {...props} />,
     group: <Group {...props} />,
