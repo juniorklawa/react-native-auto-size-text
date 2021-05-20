@@ -1,14 +1,14 @@
-import React, { useState } from 'react'
+import * as React from 'react'
 import { NativeSyntheticEvent, Text, TextLayoutEventData } from 'react-native'
 
 import { AutoSizeTextProps } from '../types'
 
 const PresetFontSize = (props: AutoSizeTextProps) => {
   const { fontSizePresets, children, style, numberOfLines } = props
-  const [currentFont, setCurrentFont] = useState<number>(
+  const [currentFont, setCurrentFont] = React.useState<number>(
     fontSizePresets![0] as number
   )
-  const [currentIndex, setCurrentIndex] = useState(0)
+  const [currentIndex, setCurrentIndex] = React.useState(0)
 
   const handleTextMode = (e: NativeSyntheticEvent<TextLayoutEventData>) => {
     const { lines } = e.nativeEvent

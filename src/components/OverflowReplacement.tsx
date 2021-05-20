@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import * as React from 'react'
 import { NativeSyntheticEvent, Text, TextLayoutEventData } from 'react-native'
 
 import { AutoSizeTextProps } from '../types'
@@ -11,7 +11,7 @@ const OverflowReplacement = (props: AutoSizeTextProps) => {
     numberOfLines,
     overFlowReplacement,
   } = props
-  const [currentText, setCurrentText] = useState<string>('')
+  const [currentText, setCurrentText] = React.useState<string>('')
 
   const handleTextMode = (e: NativeSyntheticEvent<TextLayoutEventData>) => {
     const { lines } = e.nativeEvent

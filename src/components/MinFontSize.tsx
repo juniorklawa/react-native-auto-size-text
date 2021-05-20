@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import * as React from 'react'
 import { NativeSyntheticEvent, Text, TextLayoutEventData } from 'react-native'
 
 import { AutoSizeTextProps } from '../types'
@@ -6,7 +6,7 @@ import { AutoSizeTextProps } from '../types'
 const MinFontSize = (props: AutoSizeTextProps) => {
   const { fontSize, children, style, numberOfLines, minFontSize } = props
 
-  const [currentFont, setCurrentFont] = useState(fontSize)
+  const [currentFont, setCurrentFont] = React.useState(fontSize)
   const handleTextMode = (e: NativeSyntheticEvent<TextLayoutEventData>) => {
     const { lines } = e.nativeEvent
     if (lines.length > (numberOfLines as number)) {
