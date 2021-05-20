@@ -35,7 +35,7 @@ const OverflowReplacement = (props: AutoSizeTextProps) => {
         handleTextMode(e)
       }}
     >
-      {currentText !== null ? currentText : children}
+      {currentText ? currentText : children}
     </Text>
   )
 }

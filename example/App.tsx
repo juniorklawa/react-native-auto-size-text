@@ -87,17 +87,10 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     width: '80%',
     margin: 16,
-    height: 300,
+    height: 200,
     borderWidth: 2,
   },
-  specialWrapper: {
-    borderColor: '#bcbcbc',
-    padding: 32,
-    borderRadius: 10,
-    margin: 16,
-    height: 600,
-    borderWidth: 2,
-  },
+
   scrollViewContainer: {
     flex: 1,
   },
