@@ -4,7 +4,7 @@ import { Text } from 'react-native'
 import { AutoSizeTextProps } from '../types'
 
 const Group = (props: AutoSizeTextProps) => {
-  const [currentFont, setCurrentFont] = React.useState<number>(2048)
+  const [currentFont] = React.useState<number>(2048)
 
   const { children, style } = props
 
