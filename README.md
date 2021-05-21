@@ -1,5 +1,3 @@
-Welcome file
-Welcome file
 <p align="center">
     <img alt="react-native-elements" src="https://images.emojiterra.com/twitter/v13.0/512px/1f521.png" width="256">
 </p>
