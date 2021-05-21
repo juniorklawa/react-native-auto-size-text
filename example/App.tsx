@@ -21,7 +21,7 @@ const App = () => {
         <AutoSizeText
           fontSize={64}
           numberOfLines={2}
-          mode={ResizeTextMode.MaxLines}>
+          mode={ResizeTextMode.max_lines}>
           {text}
         </AutoSizeText>
       </View>
@@ -31,7 +31,7 @@ const App = () => {
         <AutoSizeText
           numberOfLines={3}
           minFontSize={18}
-          mode={ResizeTextMode.MinFontSize}>
+          mode={ResizeTextMode.min_font_size}>
           {text}
         </AutoSizeText>
       </View>
@@ -41,7 +41,7 @@ const App = () => {
         <AutoSizeText
           fontSizePresets={[50, 30, 10]}
           numberOfLines={3}
-          mode={ResizeTextMode.PresetFontSizes}>
+          mode={ResizeTextMode.preset_font_sizes}>
           {text}
         </AutoSizeText>
       </View>
@@ -51,7 +51,7 @@ const App = () => {
         <AutoSizeText
           fontSize={12}
           numberOfLines={1}
-          mode={ResizeTextMode.OverflowReplacement}
+          mode={ResizeTextMode.overflow_replacement}
           overFlowReplacement={'Text overflowing'}>
           {text}
         </AutoSizeText>
@@ -60,15 +60,15 @@ const App = () => {
       <Text>Group</Text>
 
       <View style={styles.textWrapper}>
-        <AutoSizeText mode={ResizeTextMode.Group} fontSize={2048}>
+        <AutoSizeText mode={ResizeTextMode.group} fontSize={2048}>
           {text}
         </AutoSizeText>
       </View>
 
-      <Text>Granularity</Text>
+      <Text>StepGranularity</Text>
       <View style={styles.textWrapper}>
         <AutoSizeText
-          mode={ResizeTextMode.StepGranularity}
+          mode={ResizeTextMode.step_granularity}
           fontSize={64}
           numberOfLines={2}
           granularity={10}>
