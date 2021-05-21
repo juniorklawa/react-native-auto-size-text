@@ -26,7 +26,7 @@ Port of <a href="https://pub.dev/packages/auto_size_text"> auto_size_text </>
 * [Getting Started](#getting-started)
 * [Installation](#installation)
 * [Usage](#usage)
-* [Examples](#installation)
+* [Example](#example)
 * [Contributing](#contributing)
 * [To-do](#acknowledgements)
 
