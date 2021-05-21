@@ -55,7 +55,7 @@ Required props: `fontSize`, `numberOfLines` and `mode`.
 <AutoSizeText
 	fontSize={32}
 	numberOfLines={2}
-	mode={ResizeTextMode.MaxLines}>
+	mode={ResizeTextMode.max_lines}>
 	This string will be automatically resized to fit on two lines.
 </AutoSizeText>
 ```
@@ -66,7 +66,7 @@ Required props: `minFontSize`, `numberOfLines` and `mode`.
 <AutoSizeText
 	numberOfLines={4}
 	minFontSize={20}
-	mode={ResizeTextMode.MinFontSize}>
+	mode={ResizeTextMode.min_font_size}>
 	This string's size will not be smaller than 20. It will be automatically 
 	resized to fit on 4 lines.
 </AutoSizeText>
@@ -76,7 +76,7 @@ Required props: `minFontSize`, `numberOfLines` and `mode`.
 Required props:  `mode`.
 ```jsx
 <AutoSizeText
-	mode={ResizeTextMode.Group}>
+	mode={ResizeTextMode.group}>
 	This mode will fit the available space and sync their text size
 </AutoSizeText>
 ```
@@ -88,7 +88,7 @@ Required props: `fontSize`, `numberOfLines`, `granularity` and `mode`.
 	fontSize={48}
 	numberOfLines={2}
 	granularity={10}
-	mode={ResizeTextMode.StepGranularity}>
+	mode={ResizeTextMode.step_granularity}>
 	This String changes its size with a stepGranularity of 10. It will be automatically 
 	resized to fit on 4 lines.
 </AutoSizeText>
@@ -99,7 +99,7 @@ Required props: `fontSizePresets`, `numberOfLines` and `mode`.
 <AutoSizeText
 	fontSizePresets={[50,  30,  10]}
 	numberOfLines={4}
-	mode={ResizeTextMode.PresetFontSizes}>
+	mode={ResizeTextMode.preset_font_sizes}>
 	This String has only three allowed sizes: 50, 30 and 10. 
 	It will be automatically resized to fit on 4 lines. 
 	With this setting, you have most control
@@ -113,7 +113,7 @@ Required props: `fontSize`, `numberOfLines`, `overFlowReplacement` and `mode`.
 	fontSize={20}
 	numberOfLines={1}
 	overFlowReplacement={'Text overflowing'}
-	mode={ResizeTextMode.OverflowReplacement}>
+	mode={ResizeTextMode.overflow_replacement}>
 	This String's size will not be smaller than 20. 
 	It will be automatically resized to fit on 1 lines. 
 	Otherwise it will be replaced by a replacement string. Here's an example.
