@@ -1,8 +1,9 @@
 <p align="center">
     <img alt="react-native-elements" src="https://images.emojiterra.com/twitter/v13.0/512px/1f521.png" width="256">
 </p>
-<p align="center">
+
 <h1 align="center"> React Native Auto Text Size</h1>
+<p align="center">
  React Native component that provides several ways to resize text within a certain dimension/parent.
 </p>
 
