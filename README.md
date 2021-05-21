@@ -123,7 +123,7 @@ Required props: `fontSize`, `numberOfLines`, `overFlowReplacement` and `mode`.
 </AutoSizeText>
 ```
 
-<!-- example -->
+<!-- EXAMPLE -->
 ## Example with all modes
 ```jsx
 import React, {useState} from 'react';
