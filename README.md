@@ -4,7 +4,7 @@
 
 <h1 align="center"> React Native Auto Size Text</h1>
 <p align="center">
- React Native component that provides several ways to resize text within a certain dimension/parent.
+ React Native component for Android and iOS that provides several ways to resize text within a certain dimension/parent.
 </p>
 <p align="center">
 Port of <a href="https://pub.dev/packages/auto_size_text"> auto_size_text </>
