@@ -1,21 +1,21 @@
-import * as React from 'react'
-import { NativeSyntheticEvent, Text, TextLayoutEventData } from 'react-native'
+import * as React from 'react';
+import { NativeSyntheticEvent, Text, TextLayoutEventData } from 'react-native';
 
-import { AutoSizeTextProps } from '../types'
+import { AutoSizeTextProps } from '../types';
 
 const MinFontSize = (props: AutoSizeTextProps) => {
-  const { fontSize, children, style, numberOfLines, minFontSize } = props
+  const { fontSize, children, style, numberOfLines, minFontSize } = props;
 
-  const [currentFont, setCurrentFont] = React.useState(fontSize)
+  const [currentFont, setCurrentFont] = React.useState(fontSize);
   const handleResizing = (e: NativeSyntheticEvent<TextLayoutEventData>) => {
-    const { lines } = e.nativeEvent
+    const { lines } = e.nativeEvent;
     if (
       lines.length > (numberOfLines as number) &&
       (currentFont as number) > (minFontSize as number)
     ) {
-      setCurrentFont((currentFont as number) - 1)
+      setCurrentFont((currentFont as number) - 1);
     }
-  }
+  };
 
   return (
     <Text
@@ -30,7 +30,7 @@ const MinFontSize = (props: AutoSizeTextProps) => {
     >
       {children}
     </Text>
-  )
-}
+  );
+};
 
-export default MinFontSize
+export default MinFontSize;

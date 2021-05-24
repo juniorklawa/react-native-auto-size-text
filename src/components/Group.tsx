@@ -1,12 +1,12 @@
-import * as React from 'react'
-import { Text } from 'react-native'
+import * as React from 'react';
+import { Text } from 'react-native';
 
-import { AutoSizeTextProps } from '../types'
+import { AutoSizeTextProps } from '../types';
 
 const Group = (props: AutoSizeTextProps) => {
-  const [currentFont] = React.useState<number>(2048)
+  const [currentFont] = React.useState<number>(2048);
 
-  const { children, style } = props
+  const { children, style } = props;
 
   return (
     <Text
@@ -20,7 +20,7 @@ const Group = (props: AutoSizeTextProps) => {
     >
       {children}
     </Text>
-  )
-}
+  );
+};
 
-export default Group
+export default Group;
