@@ -63,6 +63,6 @@ export interface AutoSizeTextProps extends TextProps {
   numberOfLines?: number;
   minFontSize?: number;
   fontSizePresets?: number[];
-  overFlowReplacement?: string;
+  overflowReplacement?: string;
   granularity?: number;
 }

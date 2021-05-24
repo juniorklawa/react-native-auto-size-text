@@ -9,14 +9,14 @@ const OverflowReplacement = (props: AutoSizeTextProps) => {
     children,
     style,
     numberOfLines,
-    overFlowReplacement,
+    overflowReplacement,
   } = props;
   const [currentText, setCurrentText] = React.useState<string>('');
 
   const handleResizing = (e: NativeSyntheticEvent<TextLayoutEventData>) => {
     const { lines } = e.nativeEvent;
     if (lines.length > (numberOfLines as number)) {
-      setCurrentText(overFlowReplacement as string);
+      setCurrentText(overflowReplacement as string);
       return;
     }
 
