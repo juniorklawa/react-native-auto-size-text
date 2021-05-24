@@ -21,17 +21,18 @@ Port of <a href="https://pub.dev/packages/auto_size_text"> auto_size_text </>
 
 
 <!-- TABLE OF CONTENTS -->
-## Table of Contents
+# Table of Contents
 
 * [Installation](#installation)
 * [Usage](#usage)
-* [Example](#example)
+* [Example](#example-with-all-modes)
+* [Props](#props)
 * [Contributing](#contributing)
-* [To-do](#acknowledgements)
 
 
-### Installation
-#### Yarn
+
+# Installation
+#### yarn
 ```sh
 yarn react-native-auto-size-text
 ```
@@ -40,8 +41,7 @@ yarn react-native-auto-size-text
 npm i react-native-auto-size-text
 ```
 
-<!-- USAGE -->
-## Usage
+# Usage
 
 Import `react-native-auto-size-text` and `ResizeTextMode`
 ```javascript
@@ -49,7 +49,7 @@ import { AutoSizeText, ResizeTextMode } from 'react-native-auto-size-text';
 ```
 Choose one of the modes below:
 
-#### MaxLines
+### MaxLines
 Required props: `fontSize`, `numberOfLines` and `mode`.
 ```jsx
 <AutoSizeText
@@ -60,7 +60,7 @@ Required props: `fontSize`, `numberOfLines` and `mode`.
 </AutoSizeText>
 ```
 
-#### MinFontSize
+### MinFontSize
 Required props: `minFontSize`, `numberOfLines` and `mode`.
 ```jsx
 <AutoSizeText
@@ -72,7 +72,7 @@ Required props: `minFontSize`, `numberOfLines` and `mode`.
 </AutoSizeText>
 ```
 
-#### Group
+### Group
 Required props:  `mode`.
 ```jsx
 <AutoSizeText
@@ -81,7 +81,7 @@ Required props:  `mode`.
 </AutoSizeText>
 ```
 
-#### StepGranularity
+### StepGranularity
 Required props: `fontSize`, `numberOfLines`, `granularity` and `mode`.
 ```jsx
 <AutoSizeText
@@ -93,7 +93,7 @@ Required props: `fontSize`, `numberOfLines`, `granularity` and `mode`.
 	resized to fit on 4 lines.
 </AutoSizeText>
 ```
-#### PresetFontSizes
+### PresetFontSizes
 Required props: `fontSizePresets`, `numberOfLines` and `mode`.
 ```jsx
 <AutoSizeText
@@ -106,7 +106,7 @@ Required props: `fontSizePresets`, `numberOfLines` and `mode`.
 </AutoSizeText>
 ```
 
-#### OverflowReplacement
+### OverflowReplacement
 Required props: `fontSize`, `numberOfLines`, `overFlowReplacement` and `mode`.
 ```jsx
 <AutoSizeText
@@ -120,7 +120,19 @@ Required props: `fontSize`, `numberOfLines`, `overFlowReplacement` and `mode`.
 </AutoSizeText>
 ```
 
-<!-- EXAMPLE -->
+# Props
+| name  | description | type | default
+|-----|-----|-----| - |
+| `fontSize` | Font size | number | 14 |
+| `numberOfLines` | Number of lines before rescaling | number | none |
+| `mode` | Resize text mode | ResizeTextMode | ResizeTextMode.max_lines |
+| `minFontSize` | Minimum font size | number | none |
+| `granularity` | Text resize granularity | number | none |
+| `fontSizePresets` | Font size presets | number[] | none |
+| `Overflowreplacement` | Replacement if the text overflows parent | string | '' |
+| `style` | Text style |  | function: () => {} |
+
+
 ## Example with all modes
 ```jsx
 import React, {useState} from 'react';
@@ -232,6 +244,16 @@ const styles = StyleSheet.create({
 export default App;
 
 ```
+# Contributing
+
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
 
 
 
