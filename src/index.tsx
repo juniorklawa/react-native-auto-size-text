@@ -1,12 +1,11 @@
-import * as React from 'react'
-import { TextProps } from 'react-native'
-
-import Group from './components/Group'
-import MaxLines from './components/MaxLines'
-import MinFontSize from './components/MinFontSize'
-import OverflowReplacement from './components/OverflowReplacement'
-import PresetFontSizes from './components/PresetFontSizes'
-import StepGranularity from './components/StepGranularity'
+import * as React from 'react';
+import Group from './components/Group';
+import MaxLines from './components/MaxLines';
+import MinFontSize from './components/MinFontSize';
+import OverflowReplacement from './components/OverflowReplacement';
+import PresetFontSizes from './components/PresetFontSizes';
+import StepGranularity from './components/StepGranularity';
+import {SelectedModeProps} from './types';
 
 export enum ResizeTextMode {
   max_lines = 'max_lines',
@@ -17,19 +16,8 @@ export enum ResizeTextMode {
   group = 'group',
 }
 
-export interface AutoSizeTextProps extends TextProps {
-  children?: React.ReactNode
-  fontSize?: number
-  mode: ResizeTextMode
-  numberOfLines?: number
-  minFontSize?: number
-  fontSizePresets?: number[]
-  overFlowReplacement?: string
-  granularity?: number
-}
-
-export const AutoSizeText = ({ ...props }: AutoSizeTextProps) => {
-  const selectedMode = props.mode as string
+export const AutoSizeText = ({...props}: SelectedModeProps) => {
+  const selectedMode = props.mode as string;
 
   const Modes: any = {
     max_lines: <MaxLines {...props} />,
@@ -39,7 +27,7 @@ export const AutoSizeText = ({ ...props }: AutoSizeTextProps) => {
     step_granularity: <StepGranularity {...props} />,
     group: <Group {...props} />,
     default: <MaxLines {...props} />,
-  }
+  };
 
-  return Modes[selectedMode] || Modes.default
-}
+  return Modes[selectedMode] || Modes.default;
+};

@@ -31,6 +31,7 @@ const App = () => {
         <AutoSizeText
           numberOfLines={3}
           minFontSize={18}
+          fontSize={26}
           mode={ResizeTextMode.min_font_size}>
           {text}
         </AutoSizeText>
@@ -52,7 +53,7 @@ const App = () => {
           fontSize={12}
           numberOfLines={1}
           mode={ResizeTextMode.overflow_replacement}
-          overFlowReplacement={'Text overflowing'}>
+          overflowReplacement={'Text overflowing'}>
           {text}
         </AutoSizeText>
       </View>
@@ -60,9 +61,7 @@ const App = () => {
       <Text>Group</Text>
 
       <View style={styles.textWrapper}>
-        <AutoSizeText mode={ResizeTextMode.group} fontSize={2048}>
-          {text}
-        </AutoSizeText>
+        <AutoSizeText mode={ResizeTextMode.group}>{text}</AutoSizeText>
       </View>
 
       <Text>StepGranularity</Text>
