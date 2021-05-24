@@ -1,13 +1,20 @@
 import * as React from 'react';
-import {NativeSyntheticEvent, Text, TextLayoutEventData} from 'react-native';
-import {AutoSizeTextProps} from '../types';
+import { NativeSyntheticEvent, Text, TextLayoutEventData } from 'react-native';
+
+import { AutoSizeTextProps } from '../types';
 
 const OverflowReplacement = (props: AutoSizeTextProps) => {
-  const {fontSize, children, style, numberOfLines, overFlowReplacement} = props;
+  const {
+    fontSize,
+    children,
+    style,
+    numberOfLines,
+    overFlowReplacement,
+  } = props;
   const [currentText, setCurrentText] = React.useState<string>('');
 
-  const handleTextMode = (e: NativeSyntheticEvent<TextLayoutEventData>) => {
-    const {lines} = e.nativeEvent;
+  const handleResizing = (e: NativeSyntheticEvent<TextLayoutEventData>) => {
+    const { lines } = e.nativeEvent;
     if (lines.length > (numberOfLines as number)) {
       setCurrentText(overFlowReplacement as string);
       return;
@@ -24,9 +31,8 @@ const OverflowReplacement = (props: AutoSizeTextProps) => {
           fontSize: fontSize,
         },
       ]}
-      onTextLayout={e => {
-        handleTextMode(e);
-      }}>
+      onTextLayout={handleResizing}
+    >
       {currentText ? currentText : children}
     </Text>
   );

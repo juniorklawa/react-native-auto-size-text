@@ -9,4 +9,4 @@ module.exports = {
     'sort-imports': 'off',
     'no-shadow': 'off',
   },
-}
+};

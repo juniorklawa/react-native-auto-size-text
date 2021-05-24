@@ -1,6 +1,7 @@
 import React from 'react';
-import {TextProps} from 'react-native';
-import {ResizeTextMode} from '../index';
+import { TextProps } from 'react-native';
+
+import { ResizeTextMode } from '../index';
 
 interface CommonProps extends TextProps {
   mode: ResizeTextMode;

@@ -1,15 +1,16 @@
 import * as React from 'react';
-import {NativeSyntheticEvent, Text, TextLayoutEventData} from 'react-native';
-import {AutoSizeTextProps} from '../types';
+import { NativeSyntheticEvent, Text, TextLayoutEventData } from 'react-native';
+
+import { AutoSizeTextProps } from '../types';
 
 const MaxLines = (props: AutoSizeTextProps) => {
-  const {fontSize, children, style, numberOfLines} = props;
+  const { fontSize, children, style, numberOfLines } = props;
 
   const [currentFont, setCurrentFont] = React.useState<number>(
-    fontSize as number,
+    fontSize as number
   );
-  const handleTextMode = (e: NativeSyntheticEvent<TextLayoutEventData>) => {
-    const {lines} = e.nativeEvent;
+  const handleResizing = (e: NativeSyntheticEvent<TextLayoutEventData>) => {
+    const { lines } = e.nativeEvent;
     if (lines.length > (numberOfLines as number)) {
       setCurrentFont(currentFont - 1);
     }
@@ -25,9 +26,8 @@ const MaxLines = (props: AutoSizeTextProps) => {
           fontSize: currentFont,
         },
       ]}
-      onTextLayout={e => {
-        handleTextMode(e);
-      }}>
+      onTextLayout={handleResizing}
+    >
       {children}
     </Text>
   );

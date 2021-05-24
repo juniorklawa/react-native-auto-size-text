@@ -1,16 +1,17 @@
 import * as React from 'react';
-import {NativeSyntheticEvent, Text, TextLayoutEventData} from 'react-native';
-import {AutoSizeTextProps} from '../types';
+import { NativeSyntheticEvent, Text, TextLayoutEventData } from 'react-native';
+
+import { AutoSizeTextProps } from '../types';
 
 const PresetFontSizes = (props: AutoSizeTextProps) => {
-  const {fontSizePresets, children, style, numberOfLines} = props;
+  const { fontSizePresets, children, style, numberOfLines } = props;
   const [currentFont, setCurrentFont] = React.useState<number>(
-    fontSizePresets![0] as number,
+    fontSizePresets![0] as number
   );
   const [currentIndex, setCurrentIndex] = React.useState(0);
 
-  const handleTextMode = (e: NativeSyntheticEvent<TextLayoutEventData>) => {
-    const {lines} = e.nativeEvent;
+  const handleResizing = (e: NativeSyntheticEvent<TextLayoutEventData>) => {
+    const { lines } = e.nativeEvent;
     if (lines.length > (numberOfLines as number)) {
       if (currentIndex < fontSizePresets!.length - 1) {
         const updatedIndex = currentIndex + 1;
@@ -29,9 +30,8 @@ const PresetFontSizes = (props: AutoSizeTextProps) => {
           fontSize: currentFont,
         },
       ]}
-      onTextLayout={e => {
-        handleTextMode(e);
-      }}>
+      onTextLayout={handleResizing}
+    >
       {children}
     </Text>
   );
