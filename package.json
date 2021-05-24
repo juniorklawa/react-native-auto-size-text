@@ -7,7 +7,7 @@
     "size",
     "responsive"
   ],
-  "version": "1.0.10",
+  "version": "1.0.12",
   "description": "",
   "homepage": "https://github.com/juniorklawa/react-native-auto-size-text",
   "main": "lib/index.js",
