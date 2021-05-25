@@ -1,5 +1,12 @@
 import React, {useEffect, useState} from 'react';
-import {ScrollView, StyleSheet, Text, TextInput, View} from 'react-native';
+import {
+  Button,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TouchableOpacity,
+  View,
+} from 'react-native';
 import {AutoSizeText, ResizeTextMode} from 'react-native-auto-size-text';
 
 const App = () => {
@@ -11,9 +18,9 @@ const App = () => {
     });
   }
 
-  const test = `This String's size will not be smaller than 32. It will be automatically resized to fit on 3 lines. Otherwise, it will be replaced by a replacement String`;
+  const test = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`;
 
-  const typingEffect = async () => {
+  const handleTypingEffect = async () => {
     for await (let letter of test) {
       await delay(100);
       setText(prevState => prevState + letter);
@@ -21,14 +28,16 @@ const App = () => {
   };
 
   useEffect(() => {
-    typingEffect();
+    handleTypingEffect();
   }, []);
 
   return (
     <ScrollView
       style={styles.scrollViewContainer}
       contentContainerStyle={styles.container}>
-      {/* <Text style={styles.title}>MaxLines</Text>
+      <Button title="Start animation" onPress={handleTypingEffect} />
+
+      <Text style={styles.title}>MaxLines</Text>
 
       <View style={styles.textWrapper}>
         <AutoSizeText
@@ -37,9 +46,9 @@ const App = () => {
           mode={ResizeTextMode.max_lines}>
           {text}
         </AutoSizeText>
-      </View> */}
+      </View>
 
-      {/* <Text style={styles.title}>MinFontSize</Text>
+      <Text style={styles.title}>MinFontSize</Text>
       <View style={styles.textWrapper}>
         <AutoSizeText
           numberOfLines={3}
@@ -48,17 +57,17 @@ const App = () => {
           mode={ResizeTextMode.min_font_size}>
           {text}
         </AutoSizeText>
-      </View> */}
+      </View>
 
-      {/* <Text style={styles.title}>PresetFontSizes</Text>
+      <Text style={styles.title}>PresetFontSizes</Text>
       <View style={styles.textWrapper}>
         <AutoSizeText
-          fontSizePresets={[64, 42, 24]}
+          fontSizePresets={[64, 42, 14]}
           numberOfLines={3}
           mode={ResizeTextMode.preset_font_sizes}>
           {text}
         </AutoSizeText>
-      </View> */}
+      </View>
 
       <Text style={styles.title}>OverflowReplacement</Text>
       <View style={styles.textWrapper}>
@@ -77,7 +86,7 @@ const App = () => {
         <AutoSizeText mode={ResizeTextMode.group}>{text}</AutoSizeText>
       </View>
 
-      {/* <Text style={styles.title}>StepGranularity</Text>
+      <Text style={styles.title}>StepGranularity</Text>
       <View style={styles.textWrapper}>
         <AutoSizeText
           mode={ResizeTextMode.step_granularity}
@@ -86,7 +95,7 @@ const App = () => {
           granularity={10}>
           {text}
         </AutoSizeText>
-      </View> */}
+      </View>
     </ScrollView>
   );
 };
