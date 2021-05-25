@@ -5273,10 +5273,10 @@ react-is@^16.8.1:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-native-auto-size-text@^1.0.12:
-  version "1.0.12"
-  resolved "https://registry.yarnpkg.com/react-native-auto-size-text/-/react-native-auto-size-text-1.0.12.tgz#86774a5739621f04dd8d8902f7b4ee907a881ce5"
-  integrity sha512-0mG44fBVahFydPRrWKE0IQO9zfNbsgpTDLhHDCbc8W1iV4qO2pmAN+eoLxFXubwhk6YcjEfGY0Zv2f38eH/l1w==
+react-native-auto-size-text@^1.0.13:
+  version "1.0.13"
+  resolved "https://registry.yarnpkg.com/react-native-auto-size-text/-/react-native-auto-size-text-1.0.13.tgz#6676cef5b84946eaf86a4b33063314282ed89d28"
+  integrity sha512-2UKRCp+jmprbSrYUK4/6oStqmEOGPf1P/soHZQ1s1I7WoObCbO8n9HL/P2ZHleDfBBclZpih/pTgkPXPp9ka6w==
 
 react-native-codegen@^0.0.6:
   version "0.0.6"
