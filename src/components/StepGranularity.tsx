@@ -1,5 +1,10 @@
 import * as React from 'react';
-import { NativeSyntheticEvent, Text, TextLayoutEventData } from 'react-native';
+import {
+  NativeSyntheticEvent,
+  Platform,
+  Text,
+  TextLayoutEventData,
+} from 'react-native';
 
 import { AutoSizeTextProps } from '../types';
 
@@ -13,9 +18,15 @@ const StepGranularity = (props: AutoSizeTextProps) => {
     }
   };
 
+  const handleNumberOfLines = () => {
+    if (Platform.OS === 'android') {
+      return numberOfLines;
+    }
+  };
+
   return (
     <Text
-      numberOfLines={numberOfLines}
+      numberOfLines={handleNumberOfLines()}
       style={[
         style,
         {
