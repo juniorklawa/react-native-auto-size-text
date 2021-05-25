@@ -4,17 +4,18 @@ import { Text } from 'react-native';
 import { AutoSizeTextProps } from '../types';
 
 const Group = (props: AutoSizeTextProps) => {
-  const [currentFont] = React.useState<number>(2048);
+  const [maxSize] = React.useState<number>(1000);
 
   const { children, style } = props;
 
   return (
     <Text
       adjustsFontSizeToFit
+      numberOfLines={maxSize}
       style={[
         style,
         {
-          fontSize: currentFont,
+          fontSize: maxSize,
         },
       ]}
     >
