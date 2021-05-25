@@ -50,6 +50,8 @@ import { AutoSizeText, ResizeTextMode } from 'react-native-auto-size-text';
 Choose one of the modes below:
 
 ### MaxLines
+![](https://raw.githubusercontent.com/juniorklawa/react-native-auto-size-text/master/.github/gifs/max_lines_gif.gif)
+<br />
 Required props: `fontSize`, `numberOfLines` and `mode`.
 ```jsx
 <AutoSizeText
@@ -59,8 +61,11 @@ Required props: `fontSize`, `numberOfLines` and `mode`.
 	This string will be automatically resized to fit on two lines.
 </AutoSizeText>
 ```
+<br />
 
 ### MinFontSize
+![](https://raw.githubusercontent.com/juniorklawa/react-native-auto-size-text/master/.github/gifs/min_font_size.gif.gif)
+<br />
 Required props: `minFontSize`, `numberOfLines` and `mode`.
 ```jsx
 <AutoSizeText
@@ -71,8 +76,11 @@ Required props: `minFontSize`, `numberOfLines` and `mode`.
 	resized to fit on 4 lines.
 </AutoSizeText>
 ```
+<br />
 
 ### Group
+![](https://raw.githubusercontent.com/juniorklawa/react-native-auto-size-text/master/.github/gifs/group_gif.gif)
+<br />
 Required props:  `mode`.
 ```jsx
 <AutoSizeText
@@ -80,8 +88,11 @@ Required props:  `mode`.
 	This mode will fit the available space and sync their text size
 </AutoSizeText>
 ```
+<br />
 
 ### StepGranularity
+![](https://raw.githubusercontent.com/juniorklawa/react-native-auto-size-text/master/.github/gifs/step_granularity_gif.gif)
+<br />
 Required props: `fontSize`, `numberOfLines`, `granularity` and `mode`.
 ```jsx
 <AutoSizeText
@@ -93,7 +104,11 @@ Required props: `fontSize`, `numberOfLines`, `granularity` and `mode`.
 	resized to fit on 4 lines.
 </AutoSizeText>
 ```
+<br />
+
 ### PresetFontSizes
+![](https://raw.githubusercontent.com/juniorklawa/react-native-auto-size-text/master/.github/gifs/preset_font_sizes_gif.gif)
+<br />
 Required props: `fontSizePresets`, `numberOfLines` and `mode`.
 ```jsx
 <AutoSizeText
@@ -105,8 +120,11 @@ Required props: `fontSizePresets`, `numberOfLines` and `mode`.
 	With this setting, you have most control
 </AutoSizeText>
 ```
+<br />
 
 ### OverflowReplacement
+![](https://raw.githubusercontent.com/juniorklawa/react-native-auto-size-text/master/.github/gifs/overflow_replacement.gif.gif)
+<br />
 Required props: `fontSize`, `numberOfLines`, `overFlowReplacement` and `mode`.
 ```jsx
 <AutoSizeText
@@ -119,6 +137,7 @@ Required props: `fontSize`, `numberOfLines`, `overFlowReplacement` and `mode`.
 	Otherwise it will be replaced by a replacement string. Here's an example.
 </AutoSizeText>
 ```
+<br />
 
 # Props
 | name  | description | type | default
@@ -132,6 +151,7 @@ Required props: `fontSize`, `numberOfLines`, `overFlowReplacement` and `mode`.
 | `Overflowreplacement` | Replacement if the text overflows parent | string | '' |
 | `style` | Text style |  | function: () => {} |
 
+<br />
 
 ## Example with all modes
 ```jsx
@@ -244,6 +264,8 @@ const styles = StyleSheet.create({
 export default App;
 
 ```
+<br />
+
 # Contributing
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
