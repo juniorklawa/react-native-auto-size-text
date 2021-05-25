@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Text } from 'react-native';
 
-import { AutoSizeTextProps } from '../types';
+import { AutoSizeTextProps } from '../types'
 
 const Group = (props: AutoSizeTextProps) => {
   const [currentFont] = React.useState<number>(2048);
