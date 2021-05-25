@@ -79,11 +79,11 @@ const App = () => {
           </AutoSizeText>
         </View>
 
-        {/* <Text style={styles.title}>Group</Text>
+        <Text style={styles.title}>Group</Text>
 
         <View style={styles.textWrapper}>
           <AutoSizeText mode={ResizeTextMode.group}>{text}</AutoSizeText>
-        </View> */}
+        </View>
 
         <Text style={styles.title}>StepGranularity</Text>
         <View style={styles.textWrapper}>
@@ -112,6 +112,7 @@ const styles = StyleSheet.create({
     borderColor: '#bcbcbc',
     borderRadius: 10,
     width: '90%',
+    height: 300,
     margin: 16,
     borderWidth: 2,
   },
