@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import {
-  Button,
   SafeAreaView,
   ScrollView,
   StyleSheet,
@@ -18,7 +17,8 @@ const App = () => {
     });
   }
 
-  const loremText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`;
+  const loremText =
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.';
 
   const handleTypingEffect = async () => {
     for await (let letter of loremText) {
@@ -61,7 +61,7 @@ const App = () => {
         <Text style={styles.title}>PresetFontSizes</Text>
         <View style={styles.textWrapper}>
           <AutoSizeText
-            fontSizePresets={[64, 42, 14]}
+            fontSizePresets={[50, 42, 14]}
             numberOfLines={3}
             mode={ResizeTextMode.preset_font_sizes}>
             {text}
@@ -79,11 +79,11 @@ const App = () => {
           </AutoSizeText>
         </View>
 
-        <Text style={styles.title}>Group</Text>
+        {/* <Text style={styles.title}>Group</Text>
 
         <View style={styles.textWrapper}>
           <AutoSizeText mode={ResizeTextMode.group}>{text}</AutoSizeText>
-        </View>
+        </View> */}
 
         <Text style={styles.title}>StepGranularity</Text>
         <View style={styles.textWrapper}>
@@ -113,8 +113,6 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     width: '90%',
     margin: 16,
-    height: 250,
-    padding: 8,
     borderWidth: 2,
   },
   scrollViewContainer: {

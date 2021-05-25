@@ -27,7 +27,10 @@ const PresetFontSizes = (props: AutoSizeTextProps) => {
   };
 
   const handleNumberOfLines = () => {
-    if (Platform.OS === 'android') {
+    if (
+      (Platform.OS === 'ios' && currentIndex === fontSizePresets!.length - 1) ||
+      Platform.OS === 'android'
+    ) {
       return numberOfLines;
     }
   };
