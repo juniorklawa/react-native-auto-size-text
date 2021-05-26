@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AutoSizeText snapshot AutoSizeText renders correctly 1`] = `
+<Text
+  adjustsFontSizeToFit={true}
+  mode="max_lines"
+  numberOfLines={3}
+  onTextLayout={[Function]}
+  style={
+    Array [
+      undefined,
+      Object {
+        "fontSize": 20,
+      },
+    ]
+  }
+  testID="max-lines"
+>
+  Lorem impsum
+</Text>
+`;

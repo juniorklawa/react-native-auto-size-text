@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PresetFontSizes snapshot PresetFontSizes renders correctly 1`] = `
+<Text
+  onTextLayout={[Function]}
+  style={
+    Array [
+      undefined,
+      Object {
+        "fontSize": 50,
+      },
+    ]
+  }
+  testID="preset-font-sizes"
+>
+  Lorem impsum
+</Text>
+`;
