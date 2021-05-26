@@ -1,11 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native';
+import {SafeAreaView, ScrollView, StyleSheet, Text, View} from 'react-native';
 import {AutoSizeText, ResizeTextMode} from 'react-native-auto-size-text';
 
 const App = () => {
@@ -53,6 +47,7 @@ const App = () => {
             numberOfLines={2}
             minFontSize={24}
             fontSize={40}
+            ellipsizeMode="clip"
             mode={ResizeTextMode.min_font_size}>
             {text}
           </AutoSizeText>
@@ -63,6 +58,7 @@ const App = () => {
           <AutoSizeText
             fontSizePresets={[50, 42, 14]}
             numberOfLines={3}
+            ellipsizeMode="clip"
             mode={ResizeTextMode.preset_font_sizes}>
             {text}
           </AutoSizeText>
@@ -88,6 +84,7 @@ const App = () => {
         <Text style={styles.title}>StepGranularity</Text>
         <View style={styles.textWrapper}>
           <AutoSizeText
+          ellipsizeMode="clip"
             mode={ResizeTextMode.step_granularity}
             fontSize={64}
             numberOfLines={2}
