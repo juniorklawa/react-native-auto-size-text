@@ -64,5 +64,4 @@ buck-out/
 # Library
 lib/
 
-*/__snapshots__
-*.snap
+
