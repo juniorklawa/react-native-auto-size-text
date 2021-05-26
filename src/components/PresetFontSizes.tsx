@@ -9,7 +9,7 @@ import {
 import { AutoSizeTextProps } from '../types';
 
 const PresetFontSizes = (props: AutoSizeTextProps) => {
-  const { fontSizePresets, children, style, numberOfLines } = props;
+  const { fontSizePresets, children, style, numberOfLines, ...rest } = props;
   const [currentFont, setCurrentFont] = React.useState<number>(
     fontSizePresets![0] as number
   );
@@ -46,6 +46,7 @@ const PresetFontSizes = (props: AutoSizeTextProps) => {
         },
       ]}
       onTextLayout={handleResizing}
+      {...rest}
     >
       {children}
     </Text>

@@ -3,6 +3,7 @@
 exports[`AutoSizeText snapshot AutoSizeText renders correctly 1`] = `
 <Text
   adjustsFontSizeToFit={true}
+  mode="max_lines"
   numberOfLines={3}
   onTextLayout={[Function]}
   style={

@@ -9,7 +9,14 @@ import {
 import { AutoSizeTextProps } from '../types';
 
 const StepGranularity = (props: AutoSizeTextProps) => {
-  const { fontSize, children, style, numberOfLines, granularity } = props;
+  const {
+    fontSize,
+    children,
+    style,
+    numberOfLines,
+    granularity,
+    ...rest
+  } = props;
   const [currentFont, setCurrentFont] = React.useState(fontSize);
   const handleResizing = (e: NativeSyntheticEvent<TextLayoutEventData>) => {
     const { lines } = e.nativeEvent;
@@ -35,6 +42,7 @@ const StepGranularity = (props: AutoSizeTextProps) => {
         },
       ]}
       onTextLayout={handleResizing}
+      {...rest}
     >
       {children}
     </Text>

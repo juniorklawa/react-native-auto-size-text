@@ -6,12 +6,12 @@ import { AutoSizeTextProps } from '../types';
 const Group = (props: AutoSizeTextProps) => {
   const [maxSize] = React.useState<number>(1000);
 
-  const { children, style } = props;
+  const { children, style, ...rest } = props;
 
   return (
     <Text
-      adjustsFontSizeToFit
       testID='group'
+      adjustsFontSizeToFit
       numberOfLines={maxSize}
       style={[
         style,
@@ -19,6 +19,7 @@ const Group = (props: AutoSizeTextProps) => {
           fontSize: maxSize,
         },
       ]}
+      {...rest}
     >
       {children}
     </Text>
