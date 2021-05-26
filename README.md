@@ -9,12 +9,15 @@
 <p align="center">
 Port of <a href="https://pub.dev/packages/auto_size_text"> auto_size_text </>
 </p>
+	
+
 
 <p align="center">
   <a href="https://www.npmjs.com/package/react-native-auto-size-text"><img src="https://img.shields.io/npm/v/react-native-auto-size-text.svg"></a>
   <a href="https://github.com/juniorklawa/react-native-auto-size-text"><img src="https://img.shields.io/github/stars/juniorklawa/react-native-auto-size-text"></a>
   <a href="https://www.npmjs.com/package/react-native-auto-size-text"><img src="https://img.shields.io/npm/dm/react-native-auto-size-text.svg"></a>
-    <a href="https://github.com/prettier/prettier"><img src="https://img.shields.io/badge/styled_with-prettier-ff69b4.svg"></a>
+<a href="https://github.com/juniorklawa/react-native-auto-size-text/actions"><img src="https://github.com/juniorklawa/react-native-auto-size-text/workflows/PR/badge.svg"></a>
+   <a href="https://github.com/prettier/prettier"><img src="https://img.shields.io/badge/styled_with-prettier-ff69b4.svg"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
 </p>
 <br />
