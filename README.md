@@ -153,7 +153,7 @@ Required props: `fontSize`, `numberOfLines`, `overFlowReplacement` and `mode`.
 | `fontSizePresets` | Font size presets | number[] | none |
 | `Overflowreplacement` | Replacement if the text overflows parent | string | `''` |
 | `style` | Text style |  | function: () => {} |
-| `TextProps` | All other <Text/> props |  | function: () => {} |
+| `TextProps` | All other `<Text/>` props |  | function: () => {} |
 
 <br />
 
