@@ -72,8 +72,8 @@ Required props: `fontSize`, `numberOfLines` and `mode`.
 Required props: `minFontSize`, `numberOfLines` and `mode`.
 ```jsx
 <AutoSizeText
-	numberOfLines={4}
-	minFontSize={20}
+	numberOfLines={3}
+	minFontSize={21}
 	mode={ResizeTextMode.min_font_size}>
 	This string's size will not be smaller than 20. It will be automatically 
 	resized to fit on 4 lines.
@@ -100,7 +100,7 @@ Required props: `fontSize`, `numberOfLines`, `granularity` and `mode`.
 ```jsx
 <AutoSizeText
 	fontSize={48}
-	numberOfLines={2}
+	numberOfLines={4}
 	granularity={10}
 	mode={ResizeTextMode.step_granularity}>
 	This String changes its size with a stepGranularity of 10. It will be automatically 
@@ -115,7 +115,7 @@ Required props: `fontSize`, `numberOfLines`, `granularity` and `mode`.
 Required props: `fontSizePresets`, `numberOfLines` and `mode`.
 ```jsx
 <AutoSizeText
-	fontSizePresets={[50,  30,  10]}
+	fontSizePresets={[64,  42,  24]}
 	numberOfLines={4}
 	mode={ResizeTextMode.preset_font_sizes}>
 	This String has only three allowed sizes: 50, 30 and 10. 
@@ -131,8 +131,8 @@ Required props: `fontSizePresets`, `numberOfLines` and `mode`.
 Required props: `fontSize`, `numberOfLines`, `overFlowReplacement` and `mode`.
 ```jsx
 <AutoSizeText
-	fontSize={20}
-	numberOfLines={1}
+	fontSize={32}
+	numberOfLines={3}
 	overFlowReplacement={'Text overflowing'}
 	mode={ResizeTextMode.overflow_replacement}>
 	This String's size will not be smaller than 20. 
