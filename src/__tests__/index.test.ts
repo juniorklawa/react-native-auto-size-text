@@ -1,5 +1,3 @@
-import { addOne } from '../index';
-
 test('addOne', () => {
-  expect(addOne(0)).toEqual(1);
+  expect(2 + 2).toEqual(5);
 });
