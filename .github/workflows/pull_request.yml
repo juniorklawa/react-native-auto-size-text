@@ -5,7 +5,7 @@ on: pull_request
 
 jobs:
   build:
-    name: PR
+    name: Eslint and Tests
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -13,3 +13,5 @@ jobs:
         run: yarn
       - name: Run ESLint
         run: yarn lint --fix
+      - name: Run tests
+        run: yarn jest
