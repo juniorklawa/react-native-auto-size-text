@@ -7,7 +7,7 @@
     "size",
     "responsive"
   ],
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "React Native component for Android and iOS that provides several ways to resize text within a certain dimension/parent.",
   "homepage": "https://github.com/juniorklawa/react-native-auto-size-text",
   "main": "lib/index.js",
