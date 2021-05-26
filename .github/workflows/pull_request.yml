@@ -5,7 +5,7 @@ on: pull_request
 
 jobs:
   build:
-    name: PR
+    name: Eslint and Tests
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
