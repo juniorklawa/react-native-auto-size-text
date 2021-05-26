@@ -26,6 +26,7 @@ const StepGranularity = (props: AutoSizeTextProps) => {
 
   return (
     <Text
+      testID='step-granularity'
       numberOfLines={handleNumberOfLines()}
       style={[
         style,

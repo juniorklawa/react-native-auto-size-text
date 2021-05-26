@@ -33,6 +33,7 @@ const MinFontSize = (props: AutoSizeTextProps) => {
 
   return (
     <Text
+      testID='min-font-size'
       numberOfLines={handleNumberOfLines()}
       style={[
         style,

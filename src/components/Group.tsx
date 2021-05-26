@@ -11,6 +11,7 @@ const Group = (props: AutoSizeTextProps) => {
   return (
     <Text
       adjustsFontSizeToFit
+      testID='group'
       numberOfLines={maxSize}
       style={[
         style,

@@ -37,6 +37,7 @@ const PresetFontSizes = (props: AutoSizeTextProps) => {
 
   return (
     <Text
+      testID='preset-font-sizes'
       numberOfLines={handleNumberOfLines()}
       style={[
         style,
