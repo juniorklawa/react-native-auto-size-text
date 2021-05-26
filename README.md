@@ -75,8 +75,8 @@ Required props: `minFontSize`, `numberOfLines` and `mode`.
 	numberOfLines={3}
 	minFontSize={21}
 	mode={ResizeTextMode.min_font_size}>
-	This string's size will not be smaller than 20. It will be automatically 
-	resized to fit on 4 lines.
+	This string's size will not be smaller than 21. It will be automatically 
+	resized to fit on 3 lines.
 </AutoSizeText>
 ```
 <br />
@@ -118,7 +118,7 @@ Required props: `fontSizePresets`, `numberOfLines` and `mode`.
 	fontSizePresets={[64,  42,  24]}
 	numberOfLines={4}
 	mode={ResizeTextMode.preset_font_sizes}>
-	This String has only three allowed sizes: 50, 30 and 10. 
+	This String has only three allowed sizes: 64, 42 and 24. 
 	It will be automatically resized to fit on 4 lines. 
 	With this setting, you have most control
 </AutoSizeText>
@@ -135,8 +135,8 @@ Required props: `fontSize`, `numberOfLines`, `overFlowReplacement` and `mode`.
 	numberOfLines={3}
 	overFlowReplacement={'Text overflowing'}
 	mode={ResizeTextMode.overflow_replacement}>
-	This String's size will not be smaller than 20. 
-	It will be automatically resized to fit on 1 lines. 
+	This String's size will not be smaller than 32. 
+	It will be automatically resized to fit on 3 lines. 
 	Otherwise it will be replaced by a replacement string. Here's an example.
 </AutoSizeText>
 ```
