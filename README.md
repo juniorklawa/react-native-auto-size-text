@@ -151,7 +151,7 @@ Required props: `fontSize`, `numberOfLines`, `overFlowReplacement` and `mode`.
 | `minFontSize` | Minimum font size | number | none |
 | `granularity` | Text resize granularity | number | none |
 | `fontSizePresets` | Font size presets | number[] | none |
-| `Overflowreplacement` | Replacement if the text overflows parent | string | '' |
+| `Overflowreplacement` | Replacement if the text overflows parent | string | `''` |
 | `style` | Text style |  | function: () => {} |
 
 <br />
