@@ -25,6 +25,7 @@ const OverflowReplacement = (props: AutoSizeTextProps) => {
 
   return (
     <Text
+      testID='overflow-replacement'
       style={[
         style,
         {

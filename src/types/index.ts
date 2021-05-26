@@ -59,7 +59,7 @@ export type SelectedModeProps = CommonProps & AllModesProps;
 export interface AutoSizeTextProps extends TextProps {
   children?: React.ReactNode;
   fontSize?: number;
-  mode: ResizeTextMode;
+  mode?: ResizeTextMode;
   numberOfLines?: number;
   minFontSize?: number;
   fontSizePresets?: number[];

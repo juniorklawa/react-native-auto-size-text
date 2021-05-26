@@ -18,6 +18,7 @@ const MaxLines = (props: AutoSizeTextProps) => {
 
   return (
     <Text
+      testID='max-lines'
       numberOfLines={numberOfLines}
       adjustsFontSizeToFit
       style={[

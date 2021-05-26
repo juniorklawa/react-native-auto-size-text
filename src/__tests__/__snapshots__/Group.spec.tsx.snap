@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Group snapshot MaxLines renders correctly 1`] = `
+<Text
+  adjustsFontSizeToFit={true}
+  numberOfLines={1000}
+  style={
+    Array [
+      undefined,
+      Object {
+        "fontSize": 1000,
+      },
+    ]
+  }
+  testID="group"
+>
+  Lorem impsum
+</Text>
+`;

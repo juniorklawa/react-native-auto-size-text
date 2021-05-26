@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MinFontSize snapshot MinFontSize renders correctly 1`] = `
+<Text
+  onTextLayout={[Function]}
+  style={
+    Array [
+      undefined,
+      Object {
+        "fontSize": 14,
+      },
+    ]
+  }
+  testID="min-font-size"
+>
+  Lorem impsum
+</Text>
+`;
