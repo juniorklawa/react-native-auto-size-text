@@ -10,6 +10,7 @@ const OverflowReplacement = (props: AutoSizeTextProps) => {
     style,
     numberOfLines,
     overflowReplacement,
+    ...rest
   } = props;
   const [currentText, setCurrentText] = React.useState<string>('');
 
@@ -32,6 +33,7 @@ const OverflowReplacement = (props: AutoSizeTextProps) => {
           fontSize: fontSize,
         },
       ]}
+      {...rest}
       onTextLayout={handleResizing}
     >
       {currentText ? currentText : children}

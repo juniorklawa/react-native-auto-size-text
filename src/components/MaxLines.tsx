@@ -4,7 +4,7 @@ import { NativeSyntheticEvent, Text, TextLayoutEventData } from 'react-native';
 import { AutoSizeTextProps } from '../types';
 
 const MaxLines = (props: AutoSizeTextProps) => {
-  const { fontSize, children, style, numberOfLines } = props;
+  const { fontSize, children, style, numberOfLines, ...rest } = props;
 
   const [currentFont, setCurrentFont] = React.useState<number>(
     fontSize as number
@@ -27,6 +27,7 @@ const MaxLines = (props: AutoSizeTextProps) => {
           fontSize: currentFont,
         },
       ]}
+      {...rest}
       onTextLayout={handleResizing}
     >
       {children}

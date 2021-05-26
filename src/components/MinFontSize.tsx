@@ -9,7 +9,14 @@ import {
 import { AutoSizeTextProps } from '../types';
 
 const MinFontSize = (props: AutoSizeTextProps) => {
-  const { fontSize, children, style, numberOfLines, minFontSize } = props;
+  const {
+    fontSize,
+    children,
+    style,
+    numberOfLines,
+    minFontSize,
+    ...rest
+  } = props;
 
   const [currentFont, setCurrentFont] = React.useState(fontSize);
   const handleResizing = (e: NativeSyntheticEvent<TextLayoutEventData>) => {
@@ -41,6 +48,7 @@ const MinFontSize = (props: AutoSizeTextProps) => {
           fontSize: currentFont,
         },
       ]}
+      {...rest}
       onTextLayout={handleResizing}
     >
       {children}
