@@ -37,7 +37,7 @@ Port of <a href="https://pub.dev/packages/auto_size_text"> auto_size_text </>
 # Installation
 #### yarn
 ```sh
-yarn react-native-auto-size-text
+yarn add react-native-auto-size-text
 ```
 #### npm
 ```sh
